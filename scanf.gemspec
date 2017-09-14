@@ -1,8 +1,10 @@
 # coding: utf-8
+# frozen_string_literal: true
 
 Gem::Specification.new do |spec|
   spec.name          = "scanf"
   spec.version       = "0.0.1"
+  spec.date          = '2017-02-14'
   spec.authors       = ["David Alan Black"]
   spec.email         = ['dblack@superlink.net']
 
