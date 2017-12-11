@@ -1,5 +1,7 @@
 # scanf
 
+[![Build Status](https://travis-ci.org/ruby/scanf.svg?branch=master)](https://travis-ci.org/ruby/scanf)
+
 scanf is an implementation of the C function scanf(3), modified as necessary for Ruby compatibility.
 
 the methods provided are String#scanf, IO#scanf, and Kernel#scanf. Kernel#scanf is a wrapper around TDIN.scanf.  IO#scanf can be used on any IO stream, including file handles and sockets. scanf can be called either with or without a block.
