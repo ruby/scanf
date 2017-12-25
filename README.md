@@ -2,16 +2,16 @@
 
 [![Build Status](https://travis-ci.org/ruby/scanf.svg?branch=master)](https://travis-ci.org/ruby/scanf)
 
-scanf is an implementation of the C function scanf(3), modified as necessary for Ruby compatibility.
+`scanf` is an implementation of the C function `scanf(3)`, modified as necessary for Ruby compatibility.
 
-the methods provided are String#scanf, IO#scanf, and Kernel#scanf. Kernel#scanf is a wrapper around TDIN.scanf.  IO#scanf can be used on any IO stream, including file handles and sockets. scanf can be called either with or without a block.
+The methods provided are `String#scanf`, `IO#scanf`, and `Kernel#scanf`. `Kernel#scanf` is a wrapper around `STDIN.scanf`.  `IO#scanf` can be used on any IO stream, including file handles and sockets. `scanf` can be called either with or without a block.
 
-Scanf scans an input string or stream according to a <b>format</b>, as described below in Conversions, and returns an array of matches between the format and the input.  The format is defined in a string, and is similar (though not identical) to the formats used in Kernel#printf and Kernel#sprintf.
+Scanf scans an input string or stream according to a <b>format</b>, as described below in Conversions, and returns an array of matches between the format and the input.  The format is defined in a string, and is similar (though not identical) to the formats used in `Kernel#printf` and `Kernel#sprintf`.
 
 The format may contain <b>conversion specifiers</b>, which tell scanf what form (type) each particular matched substring should be converted to (e.g., decimal integer, floating point number, literal string,
 etc.)  The matches and conversions take place from left to right, and the conversions themselves are returned as an array.
 
-The format string may also contain characters other than those in the conversion specifiers.  White space (blanks, tabs, or newlines) in the format string matches any amount of white space, including none, in the input.  Everything else matches only itself.
+The format string may also contain characters other than those in the conversion specifiers.  Whitespace (blanks, tabs, or newlines) in the format string matches any amount of whitespace, including none, in the input.  Everything else matches only itself.
 
 Scanning stops, and scanf returns, when any input character fails to match the specifications in the format string, or when input is exhausted, or when everything in the format string has been
 matched. All matches found up to the stopping point are returned in the return array (or yielded to the block, if a block was given).
@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 require 'scanf'
 
 # String#scanf and IO#scanf take a single argument, the format string
