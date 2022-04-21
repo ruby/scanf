@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ruby/scanf"
   spec.license       = "BSD-2-Clause"
 
-  spec.files         = ["lib/scanf.rb"]
+  spec.files         = ["lib/scanf.rb", "LICENSE.txt", "README.md"] + Dir["test/scanf/**"]
   spec.bindir        = "exe"
   spec.executables   = []
   spec.require_paths = ["lib"]
